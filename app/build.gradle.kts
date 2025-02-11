@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.android)
+    alias(libs.plugins.serialization)
 }
 
 android {
@@ -52,6 +53,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     implementation(libs.dagger.hilt.android)
     kapt(libs.dagger.hilt.android.compiler)
@@ -59,6 +62,10 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
     implementation(libs.gson)
+
+    implementation(libs.kotlinx.serialization.json)
+
+    implementation(libs.coil.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

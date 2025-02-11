@@ -20,7 +20,7 @@ class DefaultUsersRepository @Inject constructor(
     override suspend fun getUsers() =
         try {
             val authToken = authRepository.getAuthToken().filterNotNull().first()
-            val usersResponse = grazerService.users(authToken)
+            val usersResponse = grazerService.users("Bearer $authToken")
             Result.success(usersResponse.data.users)
         } catch (e: HttpException) {
             // Delete the auth token if it has expired

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Grazer Code Test</string>
+    <string name="login_label">Login</string>
+    <string name="logout_label">Logout</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
 </resources>

@@ -14,6 +14,6 @@ data class UsersData(
 
 data class User(
     val name: String,
-    @SerializedName("date_of_birth") val dateOfBirth: Int,
+    @SerializedName("date_of_birth") val dateOfBirth: String,
     @SerializedName("profile_image") val profileImageUrl: String
 )
