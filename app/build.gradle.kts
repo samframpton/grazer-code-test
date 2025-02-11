@@ -55,19 +55,15 @@ dependencies {
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
-
     implementation(libs.dagger.hilt.android)
     kapt(libs.dagger.hilt.android.compiler)
-
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
     implementation(libs.gson)
-
     implementation(libs.kotlinx.serialization.json)
-
     implementation(libs.coil.compose)
-
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
